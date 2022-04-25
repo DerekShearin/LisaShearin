@@ -1,0 +1,79 @@
+body{
+background-color : black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+header{
+  background-color: grey;
+  font-size: 20px;
+  height: 15%;
+  /* padding: 25px; */
+}
+header h1{
+  padding:10px;
+}
+header p{
+  text-align: center;
+}
+#lineUp{
+  display: flex;
+  flex-flow: wrap;
+
+}
+ul{
+  display: flex;
+  /* flex-flow: row; */
+  flex-flow: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+.button{
+  width: 150px;
+  height: 35px;
+  background-color: grey;
+  margin: 20px;
+  padding: 10px;
+  border: 5px ridge lightgray; 
+  border-radius: 12px;
+  /* align-items: center; */
+  text-align: center;
+  flex-direction: row;
+  box-shadow: 5px cyan;
+  text-anchor: middle;
+  
+}
+.flexContainer{
+  /* display: grid; */
+  /* flex-direction: row; */
+  
+
+}
+/* Door Cards */
+.doorCards{
+  display: grid;
+  background-color: transparent;
+  /* margin: 15%; */
+  width: 150px;
+  object-fit: fill;
+  justify-content: space-around;
+
+}
+/* img{
+  object-fit: contain;
+} */
+#raine {
+  background-image: "/assets/images/RaineDoor.jpg";
+  object-fit: contain;
+  /* link */
+}
+#mac {
+  object-fit: contain;
+  /* door image */
+  /* link */
+ } */
+#aurora {
+  object-fit: contain;
+  /* door image */
+  /* link */
+} 
