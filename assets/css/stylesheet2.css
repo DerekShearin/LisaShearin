@@ -2,59 +2,52 @@ body{
 background-color : black;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-header{
-  background-color: grey;
-  font-size: 20px;
-  height: 15%;
-  padding: 25px;
-  font-family: URW-Chancery-L;
-  text-align: center;
-}
-#lineUp{
-  display: flex;
-  flex-flow: wrap;
-  text-justify: center;
 
-}
-ul{
-  display: flex;
-  /* flex-flow: row; */
-  flex-flow: wrap;
-  list-style-type: none;
-  margin: 10px;
-  padding: 10px;
-  justify-content: space-evenly;
-}
-.button{
-  width: 150px;
-  height: 35px;
-  background-color: grey;
-  margin: 20px;
-  padding: 10px;
-  border: 5px ridge lightgray; 
-  border-radius: 12px;
-  /* align-items: center; */
-  text-align: center;
-  flex-direction: row;
-  box-shadow: 5px cyan;
-}
-.flexContainer{
-  display: grid;
-
-}
-
-.bookCards{
+.flip-card{
+  /* background-color: transparent; */
+  width: 300px;
+  /* perspective: 1000px; */
   display: grid;
   background-color: gray;
   margin: 20px;
   object-fit: contain;
   width: 15%;
-  
-
+  border-radius: 10px;
 }
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  /* transform-style: preserve-3d; */
+}
+.flip-card:hover .flip-card-inner{
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  background-color: black;
+  color: white;
+  transform: rotateY(180deg);
+}
+/* .bookCards{
+  
+} */
 #raine {
-  background-image: "/assets/images/RaineDoor.jpg";
-  object-fit: contain;
+  /* background-image: "/assets/images/RaineDoor.jpg"; */
+  object-fit: cover;
   /* link */
 }
 #mac {

@@ -1,0 +1,1 @@
+<button onClick="document.location='indexr.html'">`Raine Benares' World`</button>
